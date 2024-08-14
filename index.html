@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCO Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Total Cost of Ownership (TCO) Calculator</h1>
+        
+        <form id="tco-form">
+            <div class="input-group">
+                <label for="initial-costs">Initial Costs ($):</label>
+                <input type="number" id="initial-costs" required>
+            </div>
+            <div class="input-group">
+                <label for="ongoing-costs">Ongoing Costs ($/year):</label>
+                <input type="number" id="ongoing-costs" required>
+            </div>
+            <div class="input-group">
+                <label for="indirect-costs">Indirect Costs ($):</label>
+                <input type="number" id="indirect-costs" required>
+            </div>
+            <div class="input-group">
+                <label for="direct-costs">Direct Costs ($):</label>
+                <input type="number" id="direct-costs" required>
+            </div>
+            <div class="input-group">
+                <label for="depreciation">Depreciation ($/year):</label>
+                <input type="number" id="depreciation" required>
+            </div>
+            <div class="input-group">
+                <label for="years">Number of Years:</label>
+                <input type="number" id="years" required>
+            </div>
+            <button type="button" onclick="calculateTCO()">Calculate TCO</button>
+        </form>
+
+        <div id="result">
+            <h2>Total Cost of Ownership: $<span id="tco-value">0</span></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
